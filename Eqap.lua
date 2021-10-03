@@ -5835,15 +5835,24 @@ end
 
 if text == "غنيلي" or text == "غن لي" or text == "غني لي" then  
                                     ght = math.random(3,196);  
-                                    local Text ='واخترنا لك هذا الاوديو الجميل'  
+                                    local Text ='احبك🥵♥️'  
                                     keyboard = {}   
                                     keyboard.inline_keyboard = {  
-                                    {{text = '-  Source .', url="t.me/vuuu4"}},
+                                    {{text = '-  مُبرمج السورس .', url="https://t.me/YY6VY"}},
                                     }  
                                     local msg_id = msg.id_/2097152/0.5  
                                     https.request("https://api.telegram.org/bot"..token..'/sendaudio?chat_id=' .. msg.chat_id_ .. '&audio=https://t.me/gwg_g/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
                                     end
-                                   
+                                    endif text == "افتارات" or text == "افتار" or text == "افتار لي" then  
+                                    ght = math.random(3,196);  
+                                    local Text ='واخترنا الافتار الجميل لك '  
+                                    keyboard = {}   
+                                    keyboard.inline_keyboard = {  
+                                    {{text = '- مُبرمج السورس .', url="https://t.me/YY6VY"}},
+                                    }  
+                                    local msg_id = msg.id_/2097152/0.5  
+                                    https.request("https://api.telegram.org/bot"..token..'/sendaudio?chat_id=' .. msg.chat_id_ .. '&audio=https://t.me/ADSFLW2/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+                                    end                                   
 if text == "مسح البوتات" and Admin(msg) then
  
 tdcli_function ({ ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(arg,tah)  
